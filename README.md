@@ -1,8 +1,13 @@
-# React + Vite
+Challenge 6 Fullstack web With react 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Buatlah aplikasi tersebut dengan menggunakan React.
+2. Pindahkan pekerjaan landing page di chapter 1 ke dalam project tersebut.
+3. Implementasikan desain dari Figma ke halaman yang dibutuhkan.
+a. Landing Page
+b. Cari Mobil
+4. Buat HTTP Server untuk menyajikan kedua halaman tersebut.
+a. GET / akan membuka Landing Page
+b. GET /cars akan membuka Cari Mobil
+5. Jangan lupa implementasikan React Context sebagai state management.
+6. Jika dirasa sudah selesai, upload pekerjaanmu ke GitHub Repository dan kirim email 
+ke fasilitatormu.
