@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+ul li a,
+ul li a:before {
+  transition: all 0.5s;
+}
+
+ul li a {
+  position: relative;
+}
+
+ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #5cb85f;
+  height: 1px;
+  transition: all 0.7s;
+}
+
+ul li a:hover:after {
+  width: 100%;
+}
+
+.navbar span,
+.btn__offcanvas {
+  display: none;
+}
+
+.button {
+  border: none;
+  border-radius: 2px;
+  padding: 8px 12px;
+  background-color: #5cb85f;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #2f7e31;
+  transition: all 0.3s;
+}
+
+#home {
+  padding-top: 3rem;
+  background-color: #f1f3ff;
+  margin-bottom: -42px;
+}
+
+#our__services,
+#why__us,
+#testimonial,
+#cta__banner,
+#faq {
+  padding-top: 100px;
+}
+
+footer {
+  padding-top: 150px;
+}
+
+.services {
+  margin-top: 10px;
+}
+
+.form-signin {
+  width: 50%;
+  margin: auto;
+}
+
+.card__border {
+  border: 1px solid #d0d0d0;
+}
+
+.card__border--warning:hover {
+  background-color: #f9cc00;
+  color: #fff;
+}
+
+.card__border--danger:hover {
+  background-color: #fa2c5a;
+  color: #fff;
+}
+
+.card__border--darkblue:hover {
+  background-color: #0d28a6;
+  color: #fff;
+}
+
+.card__border--limegreen:hover {
+  background-color: #5cb85f;
+  color: #fff;
+}
+
+.bg--aliceblue {
+  background-color: #f1f3ff;
+}
+
+.testimonial__rating {
+  max-height: 16px;
+}
+
+.testimonial__name {
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  line-height: 0px;
+}
+
+.testimonial__media {
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 50%;
+}
+
+.testimonial__img {
+  transition: transform 0.2s;
+}
+
+.testimonial__img:hover {
+  transform: scale(1.26);
+}
+
+.testimonial__media:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.cta__banner {
+  background-color: #0d28a6;
+  border-radius: 13px;
+}
+
+.cta__banner > .col {
+  margin-top: 64px;
+}
+
+.cta__banner > .col > button {
+  margin-top: 52px;
+  margin-bottom: 64px;
+}
+
+.accordion-button > p {
+  margin-bottom: 0;
+}
+
+.accordion-item:nth-child(2) {
+  margin-top: 16px;
+}
+
+.accordion-item:nth-child(3) {
+  margin-top: 16px;
+}
+
+.accordion-item:nth-child(4) {
+  margin-top: 16px;
+}
+
+.accordion-item:nth-child(5) {
+  margin-top: 16px;
+}
+
+.accordion-header {
+  border: 1px solid #d4d4d4;
+}
+
+.icon-footer img {
+  margin-right: 16px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.services span {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.navigation p a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.form {
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 24px;
+  margin-top: -42px;
+  z-index: 99;
+  position: relative;
+}
+
+#find-car {
+  background-color: #5cb85f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Helvetica";
+  padding: 8px 12px;
+  margin-right: 3px;
+}
+
+#clear-car {
+  background-color: #5cb85f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Helvetica";
+  padding: 8px 12px;
+}
+
+input#date {
+  width: 210.75px;
+  height: 36px;
+}
+
+select#tipe-driver {
+  width: 210.75px;
+  height: 36px;
+}
+
+input#time {
+  width: 210.75px;
+  height: 36px;
+}
+
+input#penumpang {
+  width: 210.75px;
+  height: 36px;
+}
+
+input#penumpang::placeholder {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8a8a8a;
+  padding: 9px 12px;
+}
+
+input {
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+
+.form label {
+  font-size: 12px;
+  font-family: "Helvetica";
+  line-height: 18px;
+}
+
+.form-select {
+  font-size: 12px;
+  font-family: "Helvetica";
+  line-height: 18px;
+  color: #8a8a8a;
+}
+
+.btn-js {
+  border-radius: 2px;
+  width: 100%;
+  padding: 8px 12px;
+  font-family: "Helvetica";
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.i-js {
+  color: rgba(138, 138, 138, 1);
+}
+
+.text-js {
+  font-family: "Helvetica";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#list-container {
+  margin-top: 360px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    /* position: unset; */
+  }
+  .navbar span,
+  .btn__offcanvas {
+    display: block;
+  }
+
+  .offcanvas {
+    width: 50%;
+  }
+  /* End Navbar */
+
+  /* Home */
+  .img-car {
+    max-width: 344px;
+    max-height: 199px;
+    right: 0;
+    margin-top: 24px;
+  }
+
+  #home {
+    padding-top: 1px;
+    margin-top: -30px;
+  }
+  /* End Home */
+
+  /* Our Services */
+  #our__services {
+    padding-top: 60px;
+  }
+
+  #our__services img {
+    max-width: 252px;
+    max-height: 228px;
+    display: flex;
+    margin: auto;
+  }
+
+  #our__services .col-md-5 {
+    margin-left: 0px !important;
+    margin-top: 24px;
+  }
+  /* End Our Services */
+
+  /* Why Us */
+  #why__us {
+    padding-top: 60px;
+  }
+
+  #why__us .container h3 {
+    text-align: center;
+  }
+
+  #why__us .container h3 + p {
+    text-align: center;
+  }
+
+  #why__us .col-md-3 {
+    margin-top: 16px;
+  }
+
+  #why__us .row {
+    margin-top: 16px !important;
+  }
+  /* End Why Us */
+
+  /* Testimonial */
+  #testimonial {
+    padding-top: 60px;
+  }
+
+  #testimonial .carousel-item {
+    border-radius: 8px;
+  }
+
+  #testimonial .testimonial__media {
+    margin: 16px 24px 0 0;
+  }
+
+  #carouselExampleControls {
+    min-width: 100%;
+  }
+
+  #testimonial .testimonial__rating {
+    display: flex;
+    margin: 24px auto;
+  }
+  /* End Testimonial */
+
+  /* CTA Banner */
+  #cta__banner {
+    padding-top: 60px;
+    margin: 0 16px;
+  }
+
+  #cta__banner p {
+    margin: auto;
+    max-width: 212px;
+  }
+
+  #cta__banner button {
+    margin: 32px 0 64px 0;
+  }
+  /* End CTA Banner */
+
+  /* FAQ */
+  #faq {
+    padding-top: 60px;
+  }
+
+  #faq h3 {
+    text-align: center;
+  }
+
+  #faq h3 + p {
+    text-align: center;
+  }
+  /* End FAQ */
+
+  /* Footer */
+  footer {
+    padding-top: 60px;
+  }
+
+  footer .icon-footer {
+    margin-bottom: 16px;
+  }
+  /* End Footer */
+}
+
+@media only screen and (min-width: 768px) {
+  .carImage {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+
+  label {
+    font-size: smaller;
+    font-family: Helvetica;
+    font-weight: 400;
+  }
+
+  #list-container {
+    margin-top: 100px;
+  }
+}
